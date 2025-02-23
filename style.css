@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    width: 10px;
+}
+
+.nav a {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    margin-left: 30px;;
+}
+.nav button {
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    margin-left: 30px;
+    padding: 11px 15px;
+    border-radius: 7px;
+    border: none;
+    background-color: white;
+    box-shadow: #0000000d 0 0 8px;
+    text-transform: uppercase;
+    transform: all .5s ease;
+    transition-duration: 0.5s;
+}
+
+.nav button:hover {
+    letter-spacing: 3px;
+    background-color: #4aa2dd;
+    color: white;
+    box-shadow: #4aa2dd 0px 7px 29px 0px;
+    transform: translate 0.2s ease;
+}
+
+.nav button:active {
+    letter-spacing: 3px;
+    background-color: #4aa2dd;
+    color: white;
+    box-shadow: #4aa2dd 0px 0px 0px 0px;
+    transform: translateY(3px );
+    transition: 200ms;
+}
+
+.nav {
+    padding: 0 20px;
+}
+
+.nav a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: .3s;
+
+}
+.nav a:hover::before {
+    width: 100%;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.About {
+    padding: 10px 30px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .left {
+    width: 700px;
+}
+header .img {
+    width: 600px;
+}
+
+header .left h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+header .left span {
+    color: #4aa2dd;
+}
+
+header .left p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.man {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: #4aa2dd;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+        text-transform: uppercase;
+            transform: all .5s ease;
+            transition-duration: 0.5s;
+}
+
+.man:hover {
+    letter-spacing: 3px;
+    background-color: #4aa2dd;
+    color: white;
+    box-shadow: #4aa2dd 0px 7px 29px 0px;
+    transform: translate 0.2s ease;
+}
+
+.man:active {
+    letter-spacing: 3px;
+    background-color: #4aa2dd;
+    color: white;
+    box-shadow: #4aa2dd 0px 0px 0px 0px;
+    transform: translateY(3px);
+    transition: 200ms;
+}
